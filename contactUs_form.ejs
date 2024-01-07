@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        form {
+            /* background-color: orchid; */
+            text-align: center;
+            border: 5px;
+
+           /* padding-left: 500px;
+            padding-right: 500px;*/
+        }
+        
+        input{
+            width:1000px;
+            color:blueviolet;
+
+        }
+    </style> -->
+    <%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/product.css">
+    </head>
+    <body>
+        <%- include('includes/navigation.ejs') %>
+
+        <!-- <header id="main-header">
+            <div class="container">
+                <h1 id="header-title">Contact Us</h1>
+                <!-- <div class="col-md-6 align-self-center">
+                    <input type="text" class="form-control" id="filter" placeholder="Search items..">
+                </div> -->
+            <!-- </div>
+        </header> -->
+        <main id="main">
+            
+            <div class="container"> 
+                <h2>Fill in your details</h2>
+                    <form id="addForm" class="product-form contactUs" action="/admin/contactUs_form" method="POST">
+                        <label name="username">Name</label><br>
+                        <input type="text" class="for-control mr-2" id="username"><br>
+
+                        <label name="email">Email</label><br>
+                        <input type="email" class="for-control mr-2" id="email"><br>
+
+                        <button type="submit" onclick="document.getElementById(`main`).value=`Successfully submitted`">GET A CALL</button>
+                    </form>
+            </div>
+        
+        </main>
+<%- include('includes/end.ejs') %>
