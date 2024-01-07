@@ -1,31 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        body{
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        form {
-            /* background-color: orchid; */
-            text-align: center;
-            border: 5px;
-
-           /* padding-left: 500px;
-            padding-right: 500px;*/
-        }
-        
-        input{
-            width:1000px;
-            color:blueviolet;
-
-        }
-    </style> -->
-    <%- include('includes/head.ejs') %>
+<%- include('includes/head.ejs') %>
     <link rel="stylesheet" href="/css/product.css">
     </head>
     <body>
@@ -43,14 +16,14 @@
             
             <div class="container"> 
                 <h2>Fill in your details</h2>
-                    <form id="addForm" class="product-form contactUs" action="/admin/contactUs_form" method="POST">
+                    <form id="addForm" class="product-form contactUs" action="/admin/success" method="GET">
                         <label name="username">Name</label><br>
                         <input type="text" class="for-control mr-2" id="username"><br>
 
                         <label name="email">Email</label><br>
                         <input type="email" class="for-control mr-2" id="email"><br>
 
-                        <button type="submit" onclick="document.getElementById(`main`).value=`Successfully submitted`">GET A CALL</button>
+                        <button type="submit">GET A CALL</button>
                     </form>
             </div>
         

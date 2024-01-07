@@ -20,6 +20,16 @@ exports.getAddProduct=(req, res, next) => {
     });
   }
 
+  exports.success=(req, res, next) => {
+    res.render('success', {
+      pageTitle: 'Success',
+      path: '/admin/success',
+      formsCSS: true,
+      productCSS: true,
+      activeAddProduct: true
+    });
+  }
+
 
 exports.getProducts=(req, res, next) => {
 

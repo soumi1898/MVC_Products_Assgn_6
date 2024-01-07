@@ -13,6 +13,9 @@ router.get('/add-product', productsController.getAddProduct);
 //for contact form
 router.get('/contactUs_form', productsController.contactUs);
 
+//for contact form
+router.get('/success', productsController.success);
+
 // /admin/add-product => POST
 router.post('/add-product', productsController.postAddProduct);
 
